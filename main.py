@@ -3,7 +3,7 @@
 import os
 import time
 import random
-#import requests
+import requests
 
 from telebot import TeleBot, types
 from check import checker
