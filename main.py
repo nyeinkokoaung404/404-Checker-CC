@@ -189,6 +189,7 @@ def user(message):
     bot.reply_to(message,
     f"<b>🎉 User Commands:</b>\n\n"
             f"<b>Format: [command] XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>\n"
+	    f"<b>Example: </b><code>/chk 4647331155846215|11|2024|630</code>\n\n"
             f"<b>Format: [command] XXXX-XXXX-XXXX</b>\n"
             f"<b>Example: </b><code>/redeem</code> <b>ABC1-ABC2-ABC3</b>\n\n"
             f"<b>💥User Subscribe => [</b><code>Premium</code><b>]</b>\n\n"
