@@ -189,11 +189,6 @@ def user(message):
     bot.reply_to(message,
     f"<b>🎉 User Commands:</b>\n\n"
             f"<b>Format: [command] XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>\n"
-            f"<b>Example: </b><code>/chk</code> <b>4647331155846215|11|2024|630</b>\n\n"
-            f"<b>Format: [command] XXXXXX</b>\n"
-            f"<b>Example: </b><code>/gen</code> <b>123456</b>\n\n"
-            f"<b>Format: [command] XXXXXX</b>\n"
-            f"<b>Example: </b><code>/sk</code> <b>aeiou123</b>\n\n"
             f"<b>Format: [command] XXXX-XXXX-XXXX</b>\n"
             f"<b>Example: </b><code>/redeem</code> <b>ABC1-ABC2-ABC3</b>\n\n"
             f"<b>💥User Subscribe => [</b><code>Premium</code><b>]</b>\n\n"
@@ -246,17 +241,17 @@ def check_card(message):
         result2 = checker(cc)
 
         if any(k in result2 for k in success_keys):
-            key = "Subscription Approved!🔥"
+            key = "Charged Card! £0.3🔥"
         elif any(k in result2 for k in insufficient_keys):
             key = "Insufficient Funds☑"
         elif any(k in result2 for k in otp_keys):
-            key = "Card Issuer Declined 3DS☑"
+            key = "Declined Card 3DS☑"
         elif any(k in result2 for k in cvv_keys):
-            key = "Card Issuer Declined CVV☑"
+            key = "Declined Card CVV☑"
         elif any(k in result2 for k in incorrect_keys):
-            key = "Card Issuer Declined CCN☑"
+            key = "Declined Card CCN☑"
         elif any(k in result2 for k in failure_keys):
-            key = "Your Card Was Declined❌"
+            key = "Your Card Declined❌"
         else:
             key = f"Unknown Response: {result2}"
 
