@@ -22,9 +22,9 @@ def send(cc, key, user_id, username, FIRST, LAST, time_taken):
         bank = country_flag = country_name = status = brand = card_type = 'Unknown'
 
     msg1 = f"""
-<b> ✦ API Stripe Charged [ £0.30 ] </b>
+<strong><b> ✦ API Stripe Charged [ £0.30 ] </b>
 <b>≫────≪Card Info≫────≪</b>
-<b>[ϟ] Cc: </b><code>{cc}</code>
+<b>[ϟ] Cc:</b> <code>{cc}</code>
 <b>[ϟ] Response: {key}</b>
 
 <b>[ϟ] Bin:</b> <code>{ii}</code>
@@ -32,7 +32,7 @@ def send(cc, key, user_id, username, FIRST, LAST, time_taken):
 <b>[ϟ] Bank:</b> <code>{bank}</code>
 <b>[ϟ] Country:</b> <code>{country_name} [{country_flag}]</code>
 
-<b>[ϟ] T/t:</b> <code>{time_taken}(Seconds)</code> | [<b>St:</b> <code>True</code>] 
+<b>[ϟ] T/t:</b> <code>{time_taken}(Seconds)</code> | [<b>St:</b> <code>True</code>]
 <b>≫────≪User Info≫────≪</b>
 <b>[ϟ] Req by:</b> <a href="tg://user?id={user_id}">{FIRST} {LAST}</a></strong>
 """
